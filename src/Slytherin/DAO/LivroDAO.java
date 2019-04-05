@@ -7,7 +7,6 @@ import Slytherin.entidade.Livro;
 import Slytherin.entidade.Livro.CategoriaLivro;
 import Slytherin.excecao.BancoException;
 import Slytherin.excecao.NegocioException;
-
 /**
  * Classe de DAO para livro
  * @author Lukas e Rayssa
@@ -42,12 +41,11 @@ public class LivroDAO implements DAO<Livro> {
     public void inserir(Livro o) throws BancoException {
         try {
             //Define String
-            sql = "INSERT INTO Livro " +
-                "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,FALSE)";
+            sql = "INSERT INTO Livro VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,FALSE)";
             //Abre conexao e prepara gatilho
             pst = bd.abrirConexao().prepareStatement(sql);
-            //Atrubui os dados 
-           //pst.setString(1, o.getCodigo());
+            //Atrubui os dados
+          
             pst.setString(1, o.getIsbn());
             pst.setString(2, o.getTitulo());
             pst.setInt(3, o.getAutor().getID());
@@ -154,7 +152,7 @@ public class LivroDAO implements DAO<Livro> {
                 livro.setID_AUTOR(rs.getInt("CodAutor"));
                 livro.setID_EDITORA(rs.getInt("CodEditora"));
             }
-            //Verifica se o objeto foi nulo e joga uma exceção, caso não foi encontrado
+            //Verifica se o objeto foi nulo e joga uma exceÃ§Ã£o, caso nÃ£o foi encontrado
             if(livro == null) {
                 bd.fecharConexao();
                 throw new BancoException("Livro não foi encontrado.");
@@ -212,7 +210,7 @@ public class LivroDAO implements DAO<Livro> {
                 livro.setID_AUTOR(rs.getInt("CodAutor"));
                 livro.setID_EDITORA(rs.getInt("CodEditora"));
             }
-            //Verifica se o objeto foi nulo e joga uma exceção, caso não foi encontrado
+            //Verifica se o objeto foi nulo e joga uma exceção, caso nÃ£o foi encontrado
             if(livro == null) {
                 bd.fecharConexao();
                 throw new BancoException("Livro não foi encontrado.");
@@ -268,7 +266,7 @@ public class LivroDAO implements DAO<Livro> {
                 livro.setID(rs.getInt("CodLivro"));
                 livro.setID_AUTOR(rs.getInt("CodAutor"));
                 livro.setID_EDITORA(rs.getInt("CodEditora"));
-                //Adiciona à lista
+                //Adiciona Ã  lista
                 livros.add(livro);
             }
             bd.fecharConexao();
