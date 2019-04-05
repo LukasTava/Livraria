@@ -118,7 +118,7 @@ public class Endereco {
     }
     /**
      * Retorna o estado do endereço
-     * <br/>Modelo: AA
+     * <br>Modelo: AA
      * @return Estado do endereço
      */
     public String getEstado() {
@@ -126,7 +126,7 @@ public class Endereco {
     }
     /**
      * Define o estado do endereço
-     * <br/>Modelo: AA
+     * <br>Modelo: AA
      * @param estado Estado do endereço
      * @throws Slytherin.excecao.FormatacaoIncorretaException Caso não siga o modelo definido
      */
@@ -138,7 +138,7 @@ public class Endereco {
     }
     /**
      * Retorna o CEP do endereço
-     * <br/>Modelo 00000-000
+     * <br>Modelo 00000-000
      * @return CEP do endereço
      */
     public String getCep() {
@@ -146,7 +146,7 @@ public class Endereco {
     }
     /**
      * Define o CEP do endereço
-     * <br/>Modelo 00000-000
+     * <br>Modelo 00000-000
      * @param cep CEP do endereço
      * @throws Slytherin.excecao.FormatacaoIncorretaException Caso não siga o modelo definido
      */
@@ -192,7 +192,7 @@ public class Endereco {
      * Valida o CEP do endereço
      * @param cep CEP do endereço
      * @return true, caso bata com o padrão definido para CEP
-     * <br/>false, caso contrário
+     * <br>false, caso contrário
      */
     private boolean validarCep(String cep) {
         if(cep == null)
@@ -203,7 +203,7 @@ public class Endereco {
      * Valida o estado do endereço
      * @param estado Estado do endereço
      * @return true, caso bata com o padrão definido para endereço
-     * <br/>false, caso contrário
+     * <br>false, caso contrário
      */
     private boolean validarEstado(String estado) {
         if(estado == null)
