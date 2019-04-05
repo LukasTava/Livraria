@@ -85,9 +85,9 @@ public class Pagamento {
     }
     /**
      * Define o número de parcelas definidas do pagamento (1, se for à vista)
-     * <br/>Deve ser de 1 à 6
+     * <br>Deve ser de 1 à 6
      * @param numParcelas Número de parcelas definidas do pagamento
-     * @throws Slytherin.excecao.NegocioException
+     * @throws Slytherin.excecao.NegocioException Caso não consiga pegar o número de parcelas, ou não foi selecionado
      */
     public void setNumParcelas(int numParcelas) throws NegocioException {
         if(this.validarNumParcelas(numParcelas))
