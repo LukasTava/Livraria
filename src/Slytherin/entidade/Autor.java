@@ -83,7 +83,7 @@ public class Autor {
     }
     /**
      * Retorna a data de morte do autor (se houver)
-     * @return 
+     * @return Data de morte do autor
      */
     public Date getDataMorte() {
         return dataMorte;
