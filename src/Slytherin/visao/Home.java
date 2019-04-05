@@ -630,10 +630,6 @@ public final class Home extends javax.swing.JFrame {
         btn_pedidos.setEnabled(false);
         btn_sair.setEnabled(false);
     }
-    /**
-     * @param args the command line arguments
-     */
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_carrinho;
