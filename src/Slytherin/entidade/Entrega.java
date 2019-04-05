@@ -33,7 +33,7 @@ public class Entrega {
     public static final int INTER_MIN = 5;
     /**
      * Valores-padrão para cada tipo de entrega
-     * <br/>Na ordem: RAPIDA, ECONOMICA, AGENDADA
+     * <br>Na ordem: RAPIDA, ECONOMICA, AGENDADA
      */
     public static final float VALORES[] = {49.99f, 4.99f, 4.99f};
     
