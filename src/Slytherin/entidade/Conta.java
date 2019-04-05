@@ -61,8 +61,8 @@ public class Conta {
     /**
      * Loga o cliente na conta
      * @param cliente Cliente da conta
-     * @throws newstime.excecao.NegocioException Caso não bata o usuário e senha
-     * @throws newstime.excecao.BancoException Caso dê algum erro na busca
+     * @throws Slytherin.excecao.NegocioException Caso não bata o usuário e senha
+     * @throws Slytherin.excecao.BancoException Caso dê algum erro na busca
      */
     public static void logar(Cliente cliente) throws NegocioException, BancoException {
         BancoDados banco = new BancoDados();
