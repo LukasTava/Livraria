@@ -27,8 +27,8 @@ public class ContaRestrita {
     /**
      * Loga o funcionário na conta
      * @param funcionario Funcionário da conta
-     * @throws newstime.excecao.BancoException Caso dê algum erro no processo de busca
-     * @throws newstime.excecao.NegocioException Caso não bata o login e senha
+     * @throws Slytherin.excecao.BancoException Caso dê algum erro no processo de busca
+     * @throws Slytherin.excecao.NegocioException Caso não bata o login e senha
      */
     public static void logar(Funcionario funcionario) throws BancoException, NegocioException {
         BancoDados banco = new BancoDados();
