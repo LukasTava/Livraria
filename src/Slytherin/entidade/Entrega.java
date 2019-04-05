@@ -56,7 +56,7 @@ public class Entrega {
     
     /**
      * Cria uma entrega, podendo ser somente RAPIDA ou ECONOMICA
-     * @param tipo 
+     * @param tipo Tipo de Entrega
      * @throws Slytherin.excecao.NegocioException Caso não siga a regra
      */
     public void criarEntrega(TipoEntrega tipo) throws NegocioException {
