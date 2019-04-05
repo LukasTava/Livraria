@@ -122,7 +122,7 @@ public class Venda {
     }
     /**
      * Conclui uma parcela do pagamento da venda, e verifica a situação de pago e de entrega
-     * <br/>Só pode ser feito caso as parcelas a pagar não estejam zeradas
+     * <br>Só pode ser feito caso as parcelas a pagar não estejam zeradas
      * @throws Slytherin.excecao.NegocioException Caso não siga a regra definida
      */
     public void concluirParcela() throws NegocioException {
@@ -138,7 +138,7 @@ public class Venda {
     }
     /**
      * Conclui a entrega (altera para CONCLUIDO)
-     * <br/>Só pode ser feito a partir do status de ANDAMENTO
+     * <br>Só pode ser feito a partir do status de ANDAMENTO
      * @throws Slytherin.excecao.NegocioException Caso não siga a regra definida
      */
     public void concluirEntrega() throws NegocioException {
