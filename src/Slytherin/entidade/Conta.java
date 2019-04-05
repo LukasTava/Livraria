@@ -27,10 +27,10 @@ public class Conta {
     
     /**
      * Cadastra o cliente e o loga automaticamente
-     * <br/>É necessário que ele não tenha conta (definido pelo e-mail)
+     * <br>É necessário que ele não tenha conta (definido pelo e-mail)
      * @param cliente Cliente da conta
-     * @throws newstime.excecao.NegocioException Caso o já tenha conta
-     * @throws newstime.excecao.BancoException Caso dê algum erro no cadastro
+     * @throws Slytherin.excecao.NegocioException Caso o já tenha conta
+     * @throws Slytherin.excecao.BancoException Caso dê algum erro no cadastro
      */
     public static void cadastrar(Cliente cliente) throws NegocioException, BancoException {
         BancoDados banco = new BancoDados();
