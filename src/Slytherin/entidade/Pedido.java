@@ -32,7 +32,7 @@ public class Pedido {
     
     /**
      * Abre um pedido
-     * <br/>É necessário estar logado para criar o pedido
+     * <br>É necessário estar logado para criar o pedido
      * @throws NegocioException Caso não siga a regra definida
      */
     public void abrirPedido() throws NegocioException {
