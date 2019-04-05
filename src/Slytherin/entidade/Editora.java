@@ -32,7 +32,7 @@ public class Editora {
     //GETTERS SETTERS
     /**
      * Retorna o CNPJ da editora
-     * <br/>Modelo: 00.000.000/0000-00
+     * <br>Modelo: 00.000.000/0000-00
      * @return CNPJ da editora
      */
     public String getCnpj() {
@@ -40,7 +40,7 @@ public class Editora {
     }
     /**
      * Define o CNPJ da editora
-     * <br/>Modelo: 00.000.000/0000-00
+     * <br>Modelo: 00.000.000/0000-00
      * @param cnpj CNPJ da editora
      * @throws Slytherin.excecao.FormatacaoIncorretaException Caso não siga o modelo definido
      */
@@ -80,7 +80,7 @@ public class Editora {
     }
     /**
      * Retorna o telefone para contato da editora
-     * <br/>Modelo: (00)0000-0000 ou (00)00000-0000
+     * <br>Modelo: (00)0000-0000 ou (00)00000-0000
      * @return Telefone para contato da editora
      */
     public String getTelefone() {
@@ -88,7 +88,7 @@ public class Editora {
     }
     /**
      * Define o telefone para contato da editora
-     * <br/>Modelo: (00)0000-0000 ou (00)00000-0000
+     * <br>Modelo: (00)0000-0000 ou (00)00000-0000
      * @param telefone Telefone para contato da editora
      * @throws Slytherin.excecao.FormatacaoIncorretaException Caso não siga o modelo definido
      */
